@@ -3,7 +3,7 @@ If you have any query or suggestion please comment below .
 
 Ancestor problem :-
 
-1.(https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+[1.(https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
 2.https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 3.https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
 4.https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/
@@ -120,5 +120,5 @@ Depth problem:-
 1.https://leetcode.com/problems/maximum-depth-of-binary-tree/
 2.https://leetcode.com/problems/minimum-depth-of-binary-tree/
 3.https://leetcode.com/problems/minimum-absolute-difference-in-bst/
-4.https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+4.https://leetcode.com/problems/maximum-depth-of-n-ary-tree/]
 Please upvote if you like it.
