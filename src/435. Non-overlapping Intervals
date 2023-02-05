@@ -50,3 +50,8 @@ In case of overlap, remove the interval having the farther end point.
             return a[1] - b[1];
         }
     }
+    
+    
+    
+    56. Merge Intervals
+    452. Minimum Number of Arrows to Burst Balloons
