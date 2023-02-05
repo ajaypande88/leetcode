@@ -1,0 +1,10 @@
+Job scheduling can be sorted either by start time or end time depending on the optimization criteria.
+
+Sorting by Start Time:
+
+If the goal is to maximize resource utilization, sort by start time.
+This scheduling method schedules the jobs with the earliest start time first, ensuring that resources are utilized as soon as they become available.
+Sorting by End Time:
+
+If the goal is to minimize the number of conflicts, sort by end time.
+This scheduling method schedules the jobs with the earliest end time first, reducing the chances of two jobs overlapping and conflicting.
