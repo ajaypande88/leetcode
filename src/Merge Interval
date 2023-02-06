@@ -1,0 +1,34 @@
+
+
+
+Very good solution using two arrays. 
+public static int[][] merge(int[][] intervals) {
+        if (intervals.length == 0) return intervals;
+
+        int maxNumber = 0;
+        for (int i = 0; i < intervals.length; i++) maxNumber = Math.max(maxNumber, Math.max(intervals[i][0], intervals[i][1]));
+
+        int[] openInterval = new int[maxNumber + 1], closeInterval = new int[maxNumber + 1];
+        for (int i = 0; i < intervals.length; i++) {
+            openInterval[intervals[i][0]]++;
+            closeInterval[intervals[i][1]]--;
+        }
+
+        List<int[]> resultantIntervals = new ArrayList<>();
+        int start = -1, numOpenInterval = 0;
+        for (int i = 0; i < maxNumber + 1; i++) {
+            numOpenInterval = numOpenInterval + openInterval[i];
+
+            if (numOpenInterval > 0 && start == -1) {
+                start = i;
+            }
+
+            numOpenInterval = numOpenInterval + closeInterval[i];
+            if (numOpenInterval == 0 && start > -1) {
+                resultantIntervals.add(new int[] {start, i});
+                start = -1;
+            }
+        }
+
+        return resultantIntervals.toArray(new int[resultantIntervals.size()][2]);
+    }
